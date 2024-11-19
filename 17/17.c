@@ -34,4 +34,7 @@ int main(void)
          return 0;
 
 }
-float calc
+float calc_chi2(float t[],float y[],float a,float b)
+{ 
+
+        }
