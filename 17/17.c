@@ -35,6 +35,18 @@ int main(void)
 
 }
 float calc_chi2(float t[],float y[],float a,float b)
-{ 
+{float chi2=0;
+ int i;
+ for(i=0;i<ndat;i++){
+          chi2 += (y[i]-func( t[i],a,b))*(y[i]-func( t[i],a,b)) / (s[i] * s[i]);
+          printf("%f,%f,%f,%f,%f\n",chi2 ,t[i] ,y[i] ,func(t[i],a,b) ,s[i]);
+         }
+         return chi2;
 
+
+}
+float func(float t,float vy,float y0){
+         float func;
+         func=y0+vy*t-0.5*9.8*t*t;
+         return func ;
         }
