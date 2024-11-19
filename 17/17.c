@@ -29,7 +29,6 @@ int main(void)
          float vy=6,y0=5,chi2;
          chi2=calc_chi2(t,exp_y,err,vy,y0);
          printf("chi square=%f at vy=%f v0=%f\n",chi2,vy,y0);
-         printf("chi square/nu=%f\n",chi2/17);
 
          return 0;
 
